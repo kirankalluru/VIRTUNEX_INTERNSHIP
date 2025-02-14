@@ -34,6 +34,7 @@ themeToggle.addEventListener('click', toggleDarkMode);
 themeToggleMobile.addEventListener('click', toggleDarkMode);
 
 // Scroll to top button
+
 const scrollTopButton = document.getElementById('scroll-top');
 
 window.addEventListener('scroll', () => {
