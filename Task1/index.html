@@ -8,77 +8,7 @@
       href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
       rel="stylesheet"
     />
-    <style>
-
-      /* Custom background for sections */
-      #about {
-        background: url("https://images.pexels.com/photos/262367/pexels-photo-262367.jpeg")
-          no-repeat center center/cover;
-      }
-      #projects {
-        background: url("https://images.pexels.com/photos/268362/pexels-photo-268362.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2")
-          no-repeat center center/cover;
-      }
-      #services {
-        background: url("https://images.pexels.com/photos/380768/pexels-photo-380768.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2")
-          no-repeat center center/cover;
-      }
-
-      /* Dark mode styles */
-
-      .dark #about,
-      .dark #projects,
-      .dark #services {
-        background-blend-mode: overlay;
-        background-color: rgba(0, 0, 0, 0.7);
-      }
-
-      /* Animations */
-
-      @keyframes fadeIn {
-        from {
-          opacity: 0;
-        }
-        to {
-          opacity: 1;
-        }
-      }
-      @keyframes slideInLeft {
-        from {
-          transform: translateX(-100%);
-        }
-        to {
-          transform: translateX(0);
-        }
-      }
-      @keyframes slideInRight {
-        from {
-          transform: translateX(100%);
-        }
-        to {
-          transform: translateX(0);
-        }
-      }
-      .fade-in {
-        animation: fadeIn 1s ease-in-out;
-      }
-      .slide-in-left {
-        animation: slideInLeft 1s ease-in-out;
-      }
-      .slide-in-right {
-        animation: slideInRight 1s ease-in-out;
-      }
-
-      /* Hover effects */
-
-      .hover-scale {
-        transition: transform 0.3s ease;
-      }
-      .hover-scale:hover {
-        transform: scale(1.05);
-      }
-
-    </style>
+    <link rel="stylesheet" href="./style.css">
 
   </head>
   <body class="bg-gray-100 font-sans dark:bg-gray-900">
@@ -313,7 +243,7 @@
           >
         </div>
         <p class="mt-4 text-sm fade-in">
-          &copy; 2023 Architect Portfolio. All rights reserved.
+          &copy; 2025 Architect Portfolio. All rights reserved.
         </p>
       </div>
     </footer>
