@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task Planner</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+
+      .glass {
+        background: rgba(255, 255, 255, 0.15);
+        backdrop-filter: blur(10px);
+        border-radius: 12px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+    </style>
+  </head>
+  <body class="relative font-sans">
+    <!-- Background Image -->
+    <div
+      class="absolute inset-0 bg-cover bg-center opacity-60"
+      style="
+        background-image: url('https://images.pexels.com/photos/3184325/pexels-photo-3184325.jpeg?auto=compress&cs=tinysrgb&h=1080');
+      "
+    ></div>
+
+    <!-- Navbar -->
+    <nav class="relative bg-gray-900 text-white p-4 sticky top-0 z-10">
+      <ul class="flex justify-center space-x-8">
+        <li>
+          <a href="#tasks" class="hover:text-purple-400 text-lg font-semibold"
+            >Tasks</a
+          >
+        </li>
+        <li>
+          <a href="#about" class="hover:text-purple-400 text-lg font-semibold"
+            >About</a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Tasks Section -->
+    <section id="tasks" class="relative p-8">
+      <h2
+        class="text-4xl font-bold text-center text-white mb-10 drop-shadow-lg"
+      >
+        Task Planner
+      </h2>
+      <div class="flex flex-wrap justify-center gap-6">
+        <!-- Task Columns -->
+        <div class="glass p-6 w-80 border border-white border-opacity-30">
+          <h3 class="text-xl font-semibold text-white mb-4">To Do</h3>
+          <div id="todo" class="task-container space-y-3 min-h-[100px] p-2">
+            <div
+              class="task bg-white p-3 rounded-lg cursor-grab shadow-md"
+              draggable="true"
+            >
+              Task 1
+            </div>
+            <div
+              class="task bg-white p-3 rounded-lg cursor-grab shadow-md"
+              draggable="true"
+            >
+              Task 2
+            </div>
+          </div>
+        </div>
+
+        <div class="glass p-6 w-80 border border-white border-opacity-30">
+          <h3 class="text-xl font-semibold text-white mb-4">In Progress</h3>
+          <div
+            id="in-progress"
+            class="task-container space-y-3 min-h-[100px] p-2"
+          >
+            <div
+              class="task bg-white p-3 rounded-lg cursor-grab shadow-md"
+              draggable="true"
+            >
+              Task 3
+            </div>
+          </div>
+        </div>
+
+        <div class="glass p-6 w-80 border border-white border-opacity-30">
+          <h3 class="text-xl font-semibold text-white mb-4">Done</h3>
+          <div id="done" class="task-container space-y-3 min-h-[100px] p-2">
+            <div
+              class="task bg-white p-3 rounded-lg cursor-grab shadow-md"
+              draggable="true"
+            >
+              Task 4
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="relative p-8 bg-white bg-opacity-90">
+      <h2 class="text-4xl font-bold text-center text-gray-900 mb-8">
+        About This Planner
+      </h2>
+      <p class="text-center max-w-2xl mx-auto text-lg text-gray-700 mb-8">
+        This task planner helps you organize tasks efficiently with
+        drag-and-drop functionality and real-time updates.
+      </p>
+      <img
+        src="https://images.pexels.com/photos/3184454/pexels-photo-3184454.jpeg?auto=compress&cs=tinysrgb&h=500"
+        alt="Task Planning"
+        class="rounded-lg shadow-lg mx-auto"
+      />
+    </section>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
